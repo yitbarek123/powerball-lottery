@@ -1,0 +1,72 @@
+<!DOCTYPE html>  
+<html>  
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+        <title>Power ball </title>
+      </head>
+    
+    <body style = " font-size: 20px;">  
+        <h1 style = "text-align: center; font-size: 40px;"> Owner </h1>          
+        <p style = "text-align: center;"> Basic operations </p>  
+
+        <button class="btn btn-primary" onclick = "App.createNewLottery()"> Create Lottery </button> 
+
+        <br>
+        <br>
+        <button class="btn btn-primary" onclick = "App.mintNft()"> Mint Nft </button> 
+         
+        <input id = "nft_url">
+        
+        <p id = "total_nfts">Total Nfts :</p>  
+
+        <button class="btn btn-primary" onclick = "App.startNewRound()"> Start new round</button>  
+        <button class="btn btn-primary" class="btn btn-primary" onclick = "App.drawNumbers()"> Draw Numbers</button> 
+        <button class="btn btn-primary" onclick = "App.givePrizes()"> Give Prizes</button> 
+        <button class="btn btn-primary" onclick = "App.mintAndPayNotAwardedWinner()"> Mint and pay not awarded winners</button> 
+
+        <button class="btn btn-primary" onclick = "App.closeLottery()"> Close Lottery</button> 
+
+        <p id = "current_round">Current Round : 0</p>  
+
+
+        <p style = "text-align: center;"> Auxilary operations </p>  
+        <button class="btn btn-primary" onclick = "App.ownerOff()"> Get owner off</button> 
+        <input id = "owner_off">
+        <p id = "owner_address"></p>  
+
+        <br>
+        <button class="btn btn-primary" onclick = "App.setWinnerTicket()"> Set winner lottery</button> 
+        <input id = "winner_ticket">
+
+        <br>
+        <p id = "nft_owner_address"></p>  
+
+        <br>
+        <button class="btn btn-primary" class="btn btn-primary" onclick = "App.listOfWinners()"> Get list of winners</button> 
+        
+        <button class="btn btn-primary" onclick = "App.getRemainingBlocks()"> Get remaining blocks</button> 
+        <button class="btn btn-primary" onclick = "App.getTicketsList()"> Get tickets list </button>
+        <button class="btn btn-primary" onclick = "App.winnersNotAwarded()"> winners not awarded </button>
+        
+        <br>
+        <p  style = "text-align: left; font-size: 20px;" id="list_items"> 
+        <ol id="list"></ol>
+
+    
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- Web3 -->
+        <script src="./dist/web3.min.js"></script>
+        <script src="./dist/truffle-contract.js"></script>
+        <!-- App -->
+        <script src="./js/owner.js"></script>
+
+    </body>  
+</html>  

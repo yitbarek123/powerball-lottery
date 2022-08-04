@@ -1,0 +1,22 @@
+{
+  "name": "dapptutorial2022",
+  "version": "1.0.0",
+  "description": "Tutorial to create an Ethereum DApp",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server",
+    "ganache": "ganache --wallet.seed myCustomSeed"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.0",
+    "@truffle/contract": "^4.5.7",
+    "lite-server": "^2.6.1",
+    "web3": "^1.7.3"
+  }
+}
